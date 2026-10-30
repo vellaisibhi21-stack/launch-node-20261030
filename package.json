@@ -1,0 +1,8 @@
+{
+  "name": "launch-node-20261030",
+  "version": "0.0.1",
+  "description": "Tiny string utilities",
+  "main": "src/strings.js",
+  "scripts": { "test": "node --test" },
+  "license": "MIT"
+}
