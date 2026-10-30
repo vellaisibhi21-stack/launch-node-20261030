@@ -11,3 +11,8 @@ test('slugify trims punctuation', () => {
 test('capitalize first letter', () => {
   assert.strictEqual(capitalize('lane'), 'Lane');
 });
+test('truncate shortens long strings', () => {
+  const { truncate } = require('../src/strings');
+  assert.strictEqual(truncate('abcdef', 4), 'abc…');
+  assert.strictEqual(truncate('abc', 4), 'abc');
+});
